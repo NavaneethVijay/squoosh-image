@@ -1,0 +1,27 @@
+{
+  "name": "squoosh-image",
+  "version": "1.0.0",
+  "description": "Image compression and resizing locally using squoosh web assembly",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NavaneethVijay/squoosh-image.git"
+  },
+  "keywords": [
+    "squoosh",
+    "web",
+    "assembly",
+    "node",
+    "image"
+  ],
+  "author": "NavaneethVijay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NavaneethVijay/squoosh-image/issues"
+  },
+  "homepage": "https://github.com/NavaneethVijay/squoosh-image#readme"
+}
