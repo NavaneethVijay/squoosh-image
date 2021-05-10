@@ -3,7 +3,9 @@ import SquooshResize from './SquooshResize';
 
 const squooshResizeModule = async (fileName: string, opts: SquooshWasm.ModuleOpts): Promise<ResizeModule> => {
   const file = opts.locateFile(fileName);
-  const results = await WebAssembly.instantiateStreaming(fetch(file), {});
+  console.log(file);
+
+  const results = await WebAssembly.instantiateStreaming(fetch('https://squoosh.app/c/squoosh_resize_bg-74a0d71f.wasm'), {});
 
   if (results.instance && results.instance.exports) {
     const wasm = results.instance.exports as SquooshResizeWasm;
